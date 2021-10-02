@@ -1,0 +1,570 @@
+/*=======================================================
+Common CSS
+=========================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: georgia;
+  font-size: 12px;
+  background-color: #6b6b6b;
+}
+
+.all_container {}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+
+
+a {
+  text-decoration: none;
+  font-family: georgia;
+  font-size: 12px;
+  color: #7b9b37;
+}
+
+.active {
+  color: #7c9c37 !important;
+}
+
+/*=======================================================
+Header Top CSS
+=========================================================*/
+.header_top {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 5px 0;
+}
+
+.header_top .call_us {
+  margin: 0 1%;
+  width: 20%;
+  display: inline-block;
+}
+
+.header_top .call_us a {
+  color: #696969;
+}
+
+.header_top .email_us {
+  width: 45%;
+  display: inline-block;
+}
+
+.header_top .email_us a {
+  color: #696969;
+}
+
+.header_top .search_form {
+  margin: 0 1%;
+  text-align: right;
+  width: 30%;
+  display: inline-block;
+  position: relative;
+}
+
+.header_top .search_form form input[type="search"] {
+  width: 100%;
+  height: 25px;
+  max-width: 211px;
+  border: none;
+  background-color: #E1E1E1;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.header_top .search_form form input[type="submit"] {
+  cursor: pointer;
+  position: absolute;
+  top: -2px;
+  right: -31px;
+  background: url("../images/search.png") no-repeat center;
+  border: none;
+  font-size: 16px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+/*=======================================================
+Main Header CSS
+=========================================================*/
+.main_header {
+  width: 100%;
+  background-color: black;
+  border-bottom: 5px solid #7c9c37;
+}
+
+.main_header .logo {
+  display: inline-block;
+  width: 24%;
+  padding: 20px;
+}
+
+.main_header nav {
+  display: inline-block;
+  width: 74%;
+}
+
+.main_nav {}
+
+.main_header nav .main_nav ul {
+  text-align: right;
+}
+
+.main_header nav .main_nav ul li {
+  position: relative;
+  display: inline-block;
+  margin: 30px 10px 10px 10px;
+  text-align: left;
+}
+.main_header nav .main_nav ul li ul{
+  position: absolute;
+  left: -9999999999999;
+}
+.main_header nav .main_nav ul li:hover ul {
+  position: absolute;
+  width: 100px;
+  z-index: 99999999;
+  background-color: black;
+  border-bottom: 5px solid #7c9c37;
+  top: 27px;
+  left: 0;
+}
+
+
+.main_header nav .main_nav ul li ul li {
+  display: block;
+  background: none;
+  position: relative;
+}
+
+.main_header nav .main_nav ul li ul li::after {
+  content: "";
+  background: #7c9c37;
+  height: 5px;
+  width: 100px;
+  left: -10px;
+  top: 40px;
+  position: absolute;
+
+}
+
+.man nav .main_nav ul li ul li a {}
+
+.main_header nav .main_nav ul li a {
+  color: #FFFFFF;
+}
+
+.main_header nav .main_nav ul li a:hover {
+  color: #7c9c37;
+}
+
+.main_header nav .main_nav ul li p {
+  color: white;
+}
+
+.main_header nav .main_nav ul li:last-of-type {
+  margin-right: none;
+}
+
+.main_header nav .main_nav ul li:last-child::after {
+  display: none;
+}
+
+.main_header nav .main_nav ul li::after {
+  content: "";
+  background: #FFFFFF no-repeat;
+  width: 1px;
+  height: 25px;
+  top: 2px;
+  position: absolute;
+  right: -15px;
+}
+
+/*====================================
+Main CSS
+======================================*/
+.slider {
+  width: 100%;
+  clear: both;
+}
+
+.shout {
+  position: relative;
+}
+
+.shout p {
+  font-size: 28px;
+  color: #333333;
+  background-color: white;
+  padding: 30px;
+  font-family: georgia;
+  text-align: center;
+}
+
+.shout::after {
+  content: "";
+  height: 1px;
+  width: 700px;
+  background-color: #EAEAEA;
+  bottom: 0;
+  position: absolute;
+  left: 15%;
+}
+
+.latest_work {
+  background-color: white;
+  width: 100%;
+  position: relative;
+  padding: 20px 0 60px 0;
+  clear: both;
+}
+
+.latest_work .work {
+  display: inline-block;
+  width: 225px;
+  margin: 13px 0px 0px 18px;
+  background-color: #F0F0F0;
+}
+
+.latest_work .work img {
+  width: 100%;
+}
+
+.latest_work .work h2 {
+  color: #7c9c37;
+  margin: 10px;
+}
+
+.latest_work .work p {
+  color: #666666;
+  margin: 10px;
+}
+
+.latest_work::after {
+  content: "";
+  height: 1px;
+  width: 700px;
+  background-color: #EAEAEA;
+  bottom: 20px;
+  position: absolute;
+  left: 15%;
+}
+
+
+/*==============================================
+Content CSS
+==============================================*/
+.content {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.about {
+  width: 100%;
+  border-bottom: 1px solid #EAEAEA;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+}
+
+.about_service {
+  width: 47%;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.about_service h2 {
+  float: left;
+  font-family: georgia;
+  font-size: 18px;
+  color: #666666;
+
+}
+
+.about_service .view_more {
+  float: right;
+  font-size: 13px;
+  font-family: georgia;
+  text-decoration: none;
+  color: #7b9b37;
+  margin-top: 3px;
+}
+
+.about_team {
+  width: 47%;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.about_team h2 {
+  float: left;
+  font-family: georgia;
+  font-size: 18px;
+  color: #666666;
+}
+
+.about_team .view_more {
+  float: right;
+  font-size: 13px;
+  font-family: georgia;
+  text-decoration: none;
+  color: #7b9b37;
+  margin-top: 3px;
+}
+
+.services {
+  background-color: #ffffff;
+  padding-top: 10px;
+  width: 50%;
+  float: left;
+  height: 300px;
+
+}
+
+.service_left {
+  float: left;
+  width: 50%;
+}
+
+.service {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.service .image {
+  float: left;
+  display: block;
+  margin: 10px;
+  margin-top: 5px;
+}
+
+.service .service_details {
+  display: block;
+  text-align: justify;
+  line-height: 22px;
+  width: 150px;
+  float: left;
+}
+
+.service_details h3 {
+  color: #7b9b37;
+}
+
+.service_details p {
+  color: #666666;
+}
+
+.service_right {
+  float: right;
+  width: 50%;
+}
+
+.team_members {
+  background-color: #ffffff;
+  padding-top: 10px;
+  width: 50%;
+  float: right;
+  height: 300px;
+}
+
+.member1 {
+  margin-left: 10px;
+  float: left;
+  margin-right: 20px;
+}
+
+.member1 p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #666666;
+}
+
+.member2 {
+  float: left;
+}
+
+.member2 p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #666666;
+}
+
+/*==================================================
+Footer CSS
+====================================================*/
+
+.footer_top {
+  clear: both;
+  background-color: #222222;
+  height: 300px;
+  width: 1000px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer_top h4 {
+  color: #666666;
+  font-size: 12px;
+  margin: 20px 0 20px 0;
+}
+
+.footer_top .about_us p {
+  font-family: georgia;
+  color: #666666;
+  font-size: 12px;
+  text-align: left;
+  width: 194px;
+  margin-top: 20px;
+}
+
+.about_us {
+  width: 25%;
+  float: left;
+}
+
+.link_block {
+  width: 25%;
+  float: left;
+}
+
+.link_block p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: georgia;
+  font-size: 12px;
+  position: relative;
+  color: #666666;
+}
+
+
+.link_block p::after {
+  content: " ";
+  width: 200px;
+  height: 1px;
+  background-color: #3A3A3A;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.blogs {
+  width: 25%;
+  float: left;
+}
+
+.blogs {
+  font-family: georgia;
+  color: #666666;
+  font-size: 12px;
+  text-align: left;
+  width: 220px;
+}
+
+.blog1>p.date {
+  margin-top: -20px;
+  font-family: georgia;
+  font-size: 10px !important;
+}
+
+.blog2>p.date {
+  margin-top: -20px;
+  font-family: georgia;
+  font-size: 10px !important;
+}
+
+.contacts {
+  width: 25%;
+  float: left;
+}
+
+.contact1,
+.contact2 {
+  font-family: georgia;
+  color: #666666;
+  font-size: 12px;
+  text-align: left;
+}
+
+input {
+  border: none;
+  background-color: #353535;
+  margin: 5px 0;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+input[type="submit"] {
+  width: 30%;
+  color: white;
+  background-color: #7c9c37;
+}
+
+.copyright {
+  background-color: #222222;
+  position: relative;
+  padding: 25px 15px;
+  font-family: georgia;
+  font-size: 12px;
+  color: #666666;
+}
+
+.copyright::before {
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background-color: #3A3A3A;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.left {
+  float: left;
+  width: 50%;
+
+}
+
+.right {
+  float: right;
+}
+
+.right a {
+  color: #666666 !important;
+}
+
+/*========================================================================
+        Author Name: Md.Junayed
+        Author Email: mdjunayed.freelancer@gmail.com
+        Author Location: Bangladesh
+        Template Name: Allorounder
+        Template URI: https: //www.os-templates.com/free-psd-templates/allrounder
+===========================================================================*/
